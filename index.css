@@ -162,8 +162,8 @@ li a{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 270px;
     /* background-image: url(assets/background.jpg); */
     border-radius: 20px;
     background-position: top;
@@ -358,7 +358,7 @@ header{
     .portfolio-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 6px;
-        margin: 30px 110px;
+        margin: 30px 90px;
     }
     .card h2{
         font-size: 15px;
