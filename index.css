@@ -381,6 +381,7 @@ header{
         font-size: 30px;
         text-align: center;
     }
+
     .about-left p{
         font-size: 20px;
     }
@@ -395,6 +396,9 @@ header{
     .skills-container{
         flex-direction: column;
         gap: 40px;
+    }
+    .skill-left{
+        gap: 2rem;
     }
 }
 @media  screen and (max-width:425px){
