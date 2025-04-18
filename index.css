@@ -496,6 +496,9 @@ header{
     .skill-right{
         grid-template-columns: repeat(1,1fr);
     }
+    .skill-left{
+        gap: 1.5rem;
+    }
 }
 @media screen and (max-width:375px) {
     .container{
@@ -507,6 +510,9 @@ header{
     }
     .resume{
         height: 80vh;
+    }
+    .skill-left{
+        gap: 1.2rem;
     }
 }
 @media screen and (max-width:320px) {
@@ -534,7 +540,7 @@ header{
         grid-template-columns: repeat(1,1fr);
     }
     .skill-left{
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .skill-right .outer{
         width: 220px;
