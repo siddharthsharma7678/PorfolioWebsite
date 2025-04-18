@@ -436,7 +436,9 @@ header{
         font-size: 30px;
         text-align: center;
     }
-
+    .resume{
+        height: 80vh;
+    }
     .about-left p{
         font-size: 20px;
     }
@@ -465,6 +467,9 @@ header{
     .navbar .hamburger{
         display: block;
         color: white;
+    }
+    .resume{
+        height: 80vh;
     }
     .navbar .nav{
         display: none;
@@ -501,7 +506,7 @@ header{
         grid-template-columns: repeat(1,1fr);
     }
     .resume{
-        height: 70vh;
+        height: 80vh;
     }
 }
 @media screen and (max-width:320px) {
@@ -533,6 +538,9 @@ header{
     }
     .skill-right .outer{
         width: 220px;
+    }
+    .resume{
+        height: 80vh;
     }
     .footer-p {
         word-wrap: break-word;
