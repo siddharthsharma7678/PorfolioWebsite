@@ -6,25 +6,27 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-        const sroll = 0;
-        document.addEventListener("DOMContentLoaded", function () {
-          const scrollButton = document.querySelector('.scroll-down');
-          if (scrollButton) {
-            scrollButton.addEventListener('click', function () {
-              window.scrollBy({
-                top: window.innerHeight,
-                behavior: 'smooth'
-              });
-            });
-          }
-        });
-      </script>
 </head>
 <body>
     
     <button class="scroll-down"><i class="fa-solid fa-down-long"></i></button>
     <button class="scroll-up"><i class="fa-solid fa-arrow-up"></i>></button>
+    <div class="tham menu">
+        <div class="tham-cancel">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="tham-logo">
+              <a href="#"><img src="assets/logo.png" alt=""></a>
+            </div>
+        <ul class="nav">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#skill" class="nav-link">Skills</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -49,8 +51,8 @@
                 <p>full stack web developer
                     practicing web development
                 </p>
-                <a href="#" class="primary-button">About Me <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#" class="secondary-button">Contact  <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#about" class="primary-button">About Me <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="secondary-button">Contact  <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -69,30 +71,33 @@
             <h1 class="h1">Projects</h1>
             <div class="portfolio-container flex container">
                 <div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>DreamXpert</h2>
+                    <p>It is a prediction webapp made by python-flask and html,css,js.It uses machine learning to predict the playing 11 by reading the excel</p>
                 </div>
                 <div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Medical Inventory management</h2>
+                    <p>A web-based Medical Inventory Management system to efficiently track, manage, and restock medicines and supplies in real-time.</p>
                 </div><div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Entertainment App</h2>
+                    <p>The Entertainment App allows users to search for their preferred movies or TV series and provides the added functionality of bookmarking their favorites. </p>
                 </div><div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>MeetConnect</h2>
+                    <p>A full-stack mock interview scheduling platform with features like authentication, interview booking, session tracking, and feedback submission.</p>
                 </div><div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
-                </div><div class="card">
-                    <h2>Paper cutter</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolores enim perspiciatis molestiae aliquam doloremque consequuntur nulla ducimus laborum libero?...</p>
-                    <a>Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Gaurdians of Wildlife Backend</h2>
+                    <p>Backend for 'Save Wildlife' app with REST APIs for wildlife data, programs, and user forms using Node.js and MongoDB.</p>
+                </div>
+                <div class="card">
+                    <h2>Tour Backend</h2>
+                    <p>User should be able to update an existing tour by sending a request to the API. Method: PUT Body: Properties to be updated,updated Successfully</p>
+                </div>
+                <div class="card">
+                    <h2>E-commerce Backend</h2>
+                    <p>Backend API for an eCommerce app with functionality to fetch all products, filter by category, and handle add-to-cart and add-to-favorites actions using POST requests.</p>
+                </div>
+                <div class="card">
+                    <h2>Zomato Orders</h2>
+                    <p>I developed a GET API (/api/orders) with pagination, allowing users to fetch order data with limit and offset query parameters.The API ensures valid inputs and returns paginated results, improving performance and user experience when dealing with large datasets.</p>
                 </div>
             </div>
     </section>
@@ -116,10 +121,10 @@
                         <svg width="100" height="100" viewBox="0 0 250 250">
                             <circle class="bg" cx="125" cy="125" r="100" fill="none" stroke="#ddd" stroke-width="10">sgg</circle>
                         </svg>
-                        <div>90%</div>
+                        <div>70%</div>
                     </div>
                     <div class="heading">
-                        Hindi
+                        English
                     </div>
                 </div>
                 <div class="progress-circle">
@@ -127,10 +132,10 @@
                         <svg width="100" height="100" viewBox="0 0 250 250">
                             <circle class="bg" cx="125" cy="125" r="100" fill="none" stroke="#ddd" stroke-width="10">sgg</circle>
                         </svg>
-                        <div>90%</div>
+                        <div>70%</div>
                     </div>
                     <div class="heading">
-                        Hindi
+                        Marathi 
                     </div>
                 </div>
                 <div class="progress-circle">
@@ -138,49 +143,61 @@
                         <svg width="100" height="100" viewBox="0 0 250 250">
                             <circle class="bg" cx="125" cy="125" r="100" fill="none" stroke="#ddd" stroke-width="10">sgg</circle>
                         </svg>
-                        <div>90%</div>
+                        <div>0%</div>
                     </div>
                     <div class="heading">
-                        Hindi
+                        Japani
                     </div>
                 </div>
             </div>
             <div class="skill-right">
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
+                <div class="progress-bar JavaScript">
+                    <div class="l-logo"><img src="assets/javascript.jpeg" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">90%</div>
+                    </div>
+                </div>
+                <div class="progress-bar HTML">
+                    <div class="l-logo"><img src="assets/html.png" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">70%</div>
+                    </div>
+                </div>
+                <div class="progress-bar CSS">
+                    <div class="l-logo"><img src="assets/css.png" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">90%</div>
+                </div>
+            </div>
+            <div class="progress-bar Bootstrap">
+                <div class="l-logo"><img src="assets/bootstrap.png" alt=""></div>
                 <div class="outer">
                     <div class="inner">70%</div>
                 </div>
+            </div>
+                <div class="progress-bar Tailwind">
+                    <div class="l-logo"><img src="assets/tailwind.png" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">60%</div>
                 </div>
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
-                <div class="outer">
-                    <div class="inner">70%</div>
+            </div>
+            <div class="progress-bar React">
+                <div class="l-logo"><img src="assets/react.jpeg" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">70%</div>
+                    </div>
                 </div>
+                <div class="progress-bar NodeJs">
+                    <div class="l-logo"><img src="assets/node.png" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">70%</div>
+                    </div>
                 </div>
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
-                <div class="outer">
-                    <div class="inner">70%</div>
-                </div>
-                </div>
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
-                <div class="outer">
-                    <div class="inner">70%</div>
-                </div>
-                </div>
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
-                <div class="outer">
-                    <div class="inner">70%</div>
-                </div>
-                </div>
-                <div class="progress-bar">
-                    <h1>JavaScript</h1>
-                <div class="outer">
-                    <div class="inner">70%</div>
-                </div>
+                <div class="progress-bar NextJs">
+                    <div class="l-logo"><img src="assets/nextjs.png" alt=""></div>
+                    <div class="outer">
+                        <div class="inner">70%</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,10 +205,11 @@
     <section id="resume" class="resume">
         <h1 class="h1">Resume</h1>
         <div class="container flex resume-container">
-                <h1>Checke out My Resume</h1>
-                <p></p>
-                <a href="#" class="Resume-btn">Download <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#" class="Resume-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="github"><a href="https://github.com/siddharthsharma7678"><i class="fa-brands fa-github"></i></a></div>
+            <h1>Checke out My Resume</h1>
+                <a href="resume/SiddharthResume-1.pdf" download class="Resume-btn">Download <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="resume/SiddharthResume-1.pdf" class="Resume-btn" target="_blank">See Resume <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="Resume-btn">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -203,46 +221,44 @@
       
           <label for="email">Email</label>
           <input type="email" id="email" name="_replyto" required />
-      
+          
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
-      
+          
           <button class="submit" type="submit">Send Message <i class="fa-solid fa-arrow-right"></i></button>
         </form>
-      </section>
+    </section>
       <footer>
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Quick Links</h4>
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h4>Quick Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">portfolio</a></li>
-              <li><a href="#resume">Resume</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
             </ul>
-          </div>
+        </div>
           <div class="footer-section">
-            <h4>Contact</h4>
-            <p>Phone: 7738783610</p>
+              <h4>Contact</h4>
+              <p>Phone: 7738783610</p>
             <p class="footer-p">siddharthsharma7678@gmail.com</p>
-          </div>
-          <div class="footer-section">
+        </div>
+        <div class="footer-section">
             <h4>Follow Us</h4>
             <ul class="social-links">
-              <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100053194281374" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/sidhu02sharma/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
             </ul>
-          </div>
         </div>
-      
+        </div>
+        
         <div class="footer-bottom">
           <p>&copy; 2025 Siddharth. All rights reserved.</p>
         </div>
       </footer>
-      
-      <!-- FontAwesome CDN for social icons -->
       <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
       
-</body>
+    </body>
 </html>
